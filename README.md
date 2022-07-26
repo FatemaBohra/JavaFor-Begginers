@@ -1,1 +1,2 @@
-# Udemy_JavaFor-Begginers
+# JavaFor-Begginers
+## This repo holds CLASSES & METHODS
