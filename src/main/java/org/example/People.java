@@ -45,6 +45,22 @@ class Robot{
     }
 }
 
+class Machine{
+    private String name;
+    private int code;
+    public Machine() {
+        System.out.println("Ist Constructor running!");
+        name = "Arnie";
+        System.out.println(name);
+    }
+
+    public Machine(String name){
+        this.name = name;
+        System.out.println("Second constructor running!");
+        System.out.println(name);
+    }
+}
+
 public class People {
     public static void main(String[] args) {
         Person person1 = new Person();
@@ -87,5 +103,8 @@ public class People {
         sam.speak("Hi, I am Sam");
         sam.jump(7);
         sam.move("South", 45.3);
+
+        new Machine();
+        new Machine("Bernie");
     }
 }
