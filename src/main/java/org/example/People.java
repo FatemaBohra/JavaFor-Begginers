@@ -61,6 +61,26 @@ class Machine{
     }
 }
 
+class Thing{
+    private String name;
+    static String description;
+
+    public final static int LUCKY_NUMBER = 7;
+
+    public Thing(String name) {
+        this.name = name;
+        System.out.println(name);
+    }
+
+    void showName(){
+        System.out.println(name);
+    }
+
+    static void getInfo(){
+        System.out.println("This is thing store");
+    }
+}
+
 public class People {
     public static void main(String[] args) {
         Person person1 = new Person();
@@ -106,5 +126,19 @@ public class People {
 
         new Machine();
         new Machine("Bernie");
+
+        /////////////////////////////////////////
+
+        Thing toy = new Thing("Teddy Bear");
+        Thing biscuit = new Thing("GoodDay biscuit"); // needs variable to access class instance variable
+
+        Thing.description = "I am a thing"; // directly access by class.
+        System.out.println(Thing.description);
+
+        toy.showName();biscuit.showName();
+        Thing.getInfo();
+
+        System.out.println(Thing.LUCKY_NUMBER);
+
     }
 }
