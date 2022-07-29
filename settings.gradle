@@ -1,3 +1,4 @@
 rootProject.name = 'Tutorial2'
 include 'toString-concept'
+include 'Inheritance'
 
